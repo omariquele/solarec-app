@@ -3,7 +3,8 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '/', component: () => import('pages/MenuPage.vue') },
+      { path: '', component: () => import('pages/SplashScreen.vue') },
+      { path: 'menu', component: () => import('pages/MenuPage.vue') },
       { path: 'comprar-recarga', component: () => import('pages/ComprarRecarga.vue') },
       { path: 'recarga-details', component: () => import('pages/RecargaDetails.vue') },
       { path: 'meio-de-pagamento', component: () => import('pages/MeioDePagamento.vue') },

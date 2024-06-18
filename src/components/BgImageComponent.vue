@@ -8,7 +8,7 @@ export default {
   props: {
     imageUrl: {
       type: String,
-      default: 'funaebg.png'
+      default: 'funae.png'
     },
     opacity: {
       type: Number,

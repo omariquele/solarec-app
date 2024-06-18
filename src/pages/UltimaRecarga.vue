@@ -14,6 +14,7 @@
 <q-input
           v-model="contador"
           label="Insira o número de contador"
+          bg-color="accent"
           filled
           class="q-my-md"
           input-style="font-size: 20pt"
@@ -45,10 +46,14 @@
 </template>
 
 <script>
+import BgImageComponent from 'src/components/BgImageComponent.vue';
 import axios from 'axios';
 
 export default {
   name: 'UltimaRecarga',
+  components: {
+    BgImageComponent
+  },
   data() {
     return {
       contador: '',
@@ -72,7 +77,7 @@ export default {
       }
     },
     voltar() {
-      this.$router.back();
+      this.$router.back('menu');
     },
   },
 };

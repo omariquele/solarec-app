@@ -55,8 +55,13 @@
 </template>
 
 <script>
+import BgImageComponent from 'src/components/BgImageComponent.vue';
+
 export default {
   name: 'ComprarRecarga',
+  components: {
+    BgImageComponent
+  },
   data() {
     return {
       contador: '',
@@ -82,7 +87,7 @@ export default {
       }
     },
     voltar() {
-      this.$router.back();
+      this.$router.back('menu');
     },
   },
 };
